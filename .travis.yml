@@ -6,6 +6,7 @@ node_js:
 before_install:
   - rvm install 2.0.0
   - rvm use 2.0.0
+  - gem install sass --version "3.3.3"
   - gem install compass --version "1.0.0.alpha.19"
 
 before_script:
