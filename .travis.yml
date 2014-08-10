@@ -6,8 +6,8 @@ node_js:
 before_install:
   - rvm install 2.0.0
   - rvm use 2.0.0
-  - gem install sass
-  - gem install compass
+  - gem install sass --version "3.2.19"
+  - gem install compass --version "0.12.6"
 
 before_script:
   - chmod +x .travis/after_success.sh
