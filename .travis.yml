@@ -3,10 +3,9 @@ language: node_js
 node_js:
   - '0.10'
 
-rvm:
- - 2.0.0-p481
-
 before_install:
+  - rvm install 2.0.0
+  - rvm use 2.0.0
   - gem install compass --version "1.0.0.alpha.19"
 
 before_script:
