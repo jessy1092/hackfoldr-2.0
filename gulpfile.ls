@@ -7,7 +7,7 @@ build_path = '_public'
 
 gulp.task 'css', ->
     gulp.src 'sass/*.sass'
-        .pipe gulp-compass {sass: 'sass', sourcemap: 'ture'}
+        .pipe gulp-compass {sass: 'sass'}
         .pipe gulp.dest "#{build_path}/css"
         .pipe gulp-livereload lr
 
