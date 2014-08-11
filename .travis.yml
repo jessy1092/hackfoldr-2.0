@@ -11,6 +11,7 @@ before_install:
 
 before_script:
   - chmod +x .travis/after_success.sh
+  - chmod +x ./deploy
 
 script:
   - gulp build
@@ -22,6 +23,6 @@ branches:
 env:
   global:
     - REPO="git@github.com:jessy1092/hackfoldr-2.0"
-    - secure: X0nhPesYOIUM9xj6Ek9HvH9m+F0IR2hO2KNI4LBOvS7a6UxXbpNcTrYy+tapngt5ma2aWSLGaZ5CGn76mPKgOdtsRTTMdfDCaOsX9REM6NC780JK82RYhq2Xa+ZQadvK9zzqiPN1cPfrYgIaB0u6GI6enD9S89xB/PDSgRh4fE8=
+    - secure: "X0nhPesYOIUM9xj6Ek9HvH9m+F0IR2hO2KNI4LBOvS7a6UxXbpNcTrYy+tapngt5ma2aWSLGaZ5CGn76mPKgOdtsRTTMdfDCaOsX9REM6NC780JK82RYhq2Xa+ZQadvK9zzqiPN1cPfrYgIaB0u6GI6enD9S89xB/PDSgRh4fE8="
 
 after_success: .travis/after_success.sh
