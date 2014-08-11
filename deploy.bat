@@ -19,7 +19,7 @@ call ./node_modules/.bin/gulp --require LiveScript build
 cd _public
 
 git add -A .
-ECHO "regen for %REV%" | git commit-tree `git write-tree` -p `git rev-parse HEAD` -p %REV% | xargs git reset --hard
+git commit -m 'deploy'
 git push origin gh-pages
 
 cd ..
